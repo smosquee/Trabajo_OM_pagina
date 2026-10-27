@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CineClub Lumière - Club de cine independiente con proyecciones exclusivas, clásicos, cine de culto y reserva de entradas online.">
+  <title>CineClub Lumière | El refugio del buen cine</title>
+
+  <!-- Google Fonts: Playfair Display (Títulos cinematográficos) & Inter (Lectura clara) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon SVG en línea temático de cine -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff3377'%3E%3Cpath d='M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- BARRA DE NAVEGACIÓN PRINCIPAL (FIJA ARRIBA)              -->
+  <!-- ========================================================= -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <!-- Logotipo y Nombre del Club -->
+      <a href="#inicio" class="logo" aria-label="CineClub Lumière - Ir al inicio">
+        <span class="logo-icon" aria-hidden="true">
+          <!-- Icono de claqueta de cine SVG -->
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M19.82 2H4.18C2.97 2 2 2.97 2 4.18v15.64C2 21.03 2.97 22 4.18 22h15.64c1.21 0 2.18-.97 2.18-2.18V4.18C22 2.97 21.03 2 19.82 2zm-8.82 2.18l2 3.82h-3l-2-3.82h3zm-5 0l2 3.82h-3L3.82 4.18H6zm14 15.64c0 .1-.08.18-.18.18H4.18c-.1 0-.18-.08-.18-.18V8.91h16v10.91zM20 7.82h-3.82l-2-3.64H17l2 3.64h1z"/>
+          </svg>
+        </span>
+        <span class="logo-text">CineClub <strong>Lumière</strong></span>
+      </a>
+
+      <!-- Botón Menú Hamburguesa para Móviles -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Enlaces de Navegación -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#cartelera" class="nav-link">Cartelera</a></li>
+          <li class="nav-item"><a href="#entradas" class="nav-link">Sacar Entradas</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- CONTENIDO PRINCIPAL                                       -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- SECCIÓN 1: INICIO / HERO (PANTALLA COMPLETA) -->
+    <section class="hero-section" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Temporada de Clásicos &amp; Joyas de Autor
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Donde las historias <span class="highlight-text">cobran vida</span> en la gran pantalla
+        </h1>
+        <p class="hero-description">
+          Bienvenido a <strong>CineClub Lumière</strong>, un espacio de encuentro creado por y para cinéfilos. 
+          Disfrutá proyecciones especiales en sala íntima, debates post-función y una cuidada selección 
+          de lo mejor del cine mundial.
+        </p>
+        <div class="hero-actions">
+          <a href="#cartelera" class="btn btn-primary">
+            <span>Ver Películas en Cartelera</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+          <a href="#entradas" class="btn btn-secondary">
+            <span>Sacar Entradas</span>
+          </a>
+        </div>
+
+        <!-- Estadísticas o distintivos del club -->
+        <div class="hero-features">
+          <div class="feature-item">
+            <span class="feature-number">100%</span>
+            <span class="feature-label">Proyecciones en audio original</span>
+          </div>
+          <div class="feature-divider" aria-hidden="true"></div>
+          <div class="feature-item">
+            <span class="feature-number">4K</span>
+            <span class="feature-label">Calidad &amp; Sonido Envolvente</span>
+          </div>
+          <div class="feature-divider" aria-hidden="true"></div>
+          <div class="feature-item">
+            <span class="feature-number">50</span>
+            <span class="feature-label">Butacas por función</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECCIÓN 2: FUNCIONES Y PELÍCULAS -->
+    <section class="cartelera-section" id="cartelera" aria-labelledby="cartelera-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Programación Actual</span>
+          <h2 class="section-title" id="cartelera-title">Próximas Funciones</h2>
+          <p class="section-subtitle">
+            Explorá nuestra selección para este mes. Elegí tu función favorita y reservá tu lugar antes de que se agoten las butacas.
+          </p>
+        </div>
+
+        <!-- Contenedor dinámico de tarjetas generado desde script.js -->
+        <div class="peliculas-grid" id="peliculas-grid" role="region" aria-label="Listado de películas en cartelera">
+          <!-- Las tarjetas de películas se inyectan automáticamente desde JavaScript -->
+          <noscript>
+            <p class="noscript-message">Por favor, habilita JavaScript en tu navegador para ver la cartelera de películas actualizada.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECCIÓN 3: COMPRA / RESERVA DE ENTRADAS -->
+    <section class="entradas-section" id="entradas" aria-labelledby="entradas-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tu Pase al Cine</span>
+          <h2 class="section-title" id="entradas-title">Reserva de Entradas</h2>
+          <p class="section-subtitle">
+            Seleccioná tu película, indicá la cantidad de butacas y completá tus datos. Las entradas se confirman al instante.
+          </p>
+        </div>
+
+        <div class="reserva-wrapper">
+          <!-- Columna del Formulario de Reserva -->
+          <div class="reserva-card">
+            <form id="form-reserva" class="form-reserva" novalidate>
+              
+              <!-- Campo 1: Selección de Función -->
+              <div class="form-group" id="group-funcion">
+                <label for="select-funcion" class="form-label">
+                  Película y Función <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <select id="select-funcion" class="form-select" name="funcion" required aria-describedby="error-funcion stock-info">
+                    <option value="" disabled selected>— Elegí una película disponible —</option>
+                    <!-- Opciones generadas dinámicamente desde script.js -->
+                  </select>
+                </div>
+                <!-- Información de disponibilidad en tiempo real -->
+                <div id="stock-info" class="stock-info" aria-live="polite"></div>
+                <span class="error-message" id="error-funcion" role="alert"></span>
+              </div>
+
+              <!-- Campo 2: Cantidad de Entradas -->
+              <div class="form-group" id="group-cantidad">
+                <label for="input-cantidad" class="form-label">
+                  Cantidad de Entradas <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-number-wrapper">
+                  <button type="button" class="btn-step" id="btn-decrementar" aria-label="Disminuir entradas">-</button>
+                  <input 
+                    type="number" 
+                    id="input-cantidad" 
+                    name="cantidad" 
+                    class="form-input text-center" 
+                    min="1" 
+                    max="10" 
+                    value="1" 
+                    required 
+                    aria-describedby="error-cantidad"
+                  >
+                  <button type="button" class="btn-step" id="btn-incrementar" aria-label="Aumentar entradas">+</button>
+                </div>
+                <span class="form-hint">Máximo según disponibilidad de la función</span>
+                <span class="error-message" id="error-cantidad" role="alert"></span>
+              </div>
+
+              <!-- Campo 3: Nombre Completo -->
+              <div class="form-group" id="group-nombre">
+                <label for="input-nombre" class="form-label">
+                  Nombre y Apellido <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="input-nombre" 
+                  name="nombre" 
+                  class="form-input" 
+                  placeholder="Ej: Sofía Martínez" 
+                  required 
+                  autocomplete="name"
+                  aria-describedby="error-nombre"
+                >
+                <span class="error-message" id="error-nombre" role="alert"></span>
+              </div>
+
+              <!-- Campo 4: Correo Electrónico -->
+              <div class="form-group" id="group-email">
+                <label for="input-email" class="form-label">
+                  Correo Electrónico <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="input-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="Ej: sofia@ejemplo.com" 
+                  required 
+                  autocomplete="email"
+                  aria-describedby="error-email"
+                >
+                <span class="form-hint">Te enviaremos los detalles y código de acceso aquí</span>
+                <span class="error-message" id="error-email" role="alert"></span>
+              </div>
+
+              <!-- Campo 5: Teléfono de Contacto -->
+              <div class="form-group" id="group-telefono">
+                <label for="input-telefono" class="form-label">
+                  Teléfono de Contacto <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="input-telefono" 
+                  name="telefono" 
+                  class="form-input" 
+                  placeholder="Ej: +54 9 11 4567-8901" 
+                  required 
+                  autocomplete="tel"
+                  aria-describedby="error-telefono"
+                >
+                <span class="error-message" id="error-telefono" role="alert"></span>
+              </div>
+
+              <!-- Botón de Envío -->
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-reserva">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 4v10h16V8H4zm2 2h4v2H6v-2zm0 4h4v2H6v-2zm12-4h-6v2h6v-2zm0 4h-6v2h6v-2z"/>
+                  </svg>
+                  <span>Confirmar Reserva</span>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Columna Lateral: Mensaje de Confirmación / Ticket Resumen -->
+          <div class="reserva-lateral">
+            <!-- Estado 1: Mensaje Informativo Inicial -->
+            <div class="reserva-info-card" id="reserva-info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                  <path d="M18 4v1h-2V4c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1v1H6V4c0-.55-.45-1-1-1s-1 .45-1 1v16c0 .55.45 1 1 1s1-.45 1-1v-1h2v1c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-1h2v1c0 .55.45 1 1 1s1-.45 1-1V4c0-.55-.45-1-1-1s-1 .45-1 1zm-4 13H10v-2h4v2zm0-4H10v-2h4v2zm0-4H10V7h4v2z"/>
+                </svg>
+              </div>
+              <h3 class="info-title">Tu experiencia en Lumière</h3>
+              <ul class="info-bullets">
+                <li><strong>Sin costos extras:</strong> La reserva garantiza tu butaca numerada.</li>
+                <li><strong>Ingreso puntual:</strong> Las puertas abren 20 minutos antes de cada función.</li>
+                <li><strong>Charla &amp; Debate:</strong> Al término de la película, nos quedamos a conversar con café de cortesía.</li>
+                <li><strong>Cancelación libre:</strong> Si no podés venir, avisanos para liberar la butaca.</li>
+              </ul>
+            </div>
+
+            <!-- Estado 2: Resumen de Reserva Confirmada (Inicialmente Oculto) -->
+            <div class="ticket-confirmado" id="ticket-confirmado" style="display: none;" aria-live="polite">
+              <div class="ticket-header">
+                <div class="ticket-check-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h3>¡Reserva Confirmada!</h3>
+                <p class="ticket-subtitle">Te esperamos en la sala. Guardá este comprobante:</p>
+              </div>
+
+              <!-- Diseño tipo entrada de cine clásica -->
+              <div class="ticket-body">
+                <div class="ticket-row">
+                  <span class="ticket-label">Código:</span>
+                  <span class="ticket-value code-highlight" id="resumen-codigo">#LUM-0000</span>
+                </div>
+                <div class="ticket-divider" aria-hidden="true"></div>
+                <div class="ticket-row">
+                  <span class="ticket-label">Película:</span>
+                  <span class="ticket-value" id="resumen-pelicula">—</span>
+                </div>
+                <div class="ticket-row">
+                  <span class="ticket-label">Fecha y Hora:</span>
+                  <span class="ticket-value" id="resumen-fecha-hora">—</span>
+                </div>
+                <div class="ticket-row">
+                  <span class="ticket-label">Entradas:</span>
+                  <span class="ticket-value badge-entradas" id="resumen-cantidad">—</span>
+                </div>
+                <div class="ticket-divider" aria-hidden="true"></div>
+                <div class="ticket-row">
+                  <span class="ticket-label">Titular:</span>
+                  <span class="ticket-value" id="resumen-titular">—</span>
+                </div>
+                <div class="ticket-row">
+                  <span class="ticket-label">Email:</span>
+                  <span class="ticket-value" id="resumen-email">—</span>
+                </div>
+                <div class="ticket-row">
+                  <span class="ticket-label">Teléfono:</span>
+                  <span class="ticket-value" id="resumen-telefono">—</span>
+                </div>
+              </div>
+
+              <div class="ticket-footer">
+                <p class="ticket-notice">Se ha enviado una copia a tu correo electrónico.</p>
+                <button type="button" class="btn btn-secondary btn-block" id="btn-nueva-reserva">
+                  Sacar otra entrada
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECCIÓN 4: CONTACTO Y REDES SOCIALES -->
+    <section class="contacto-section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Conectemos</span>
+          <h2 class="section-title" id="contacto-title">Contacto &amp; Comunidad</h2>
+          <p class="section-subtitle">
+            ¿Tenés alguna consulta, querés proponer una película o sumarte como socio del club? Escribinos o seguinos en nuestras redes.
+          </p>
+        </div>
+
+        <div class="contacto-grid">
+          
+          <!-- Tarjeta de Correo Electrónico -->
+          <div class="contacto-card">
+            <div class="contacto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <h3 class="contacto-heading">Correo Electrónico</h3>
+            <p class="contacto-desc">Escribinos directamente para consultas generales o reservas grupales:</p>
+            <a href="mailto:hola@cineclublumiere.org" class="contacto-link">
+              hola@cineclublumiere.org
+            </a>
+          </div>
+
+          <!-- Tarjeta de Ubicación y Horarios -->
+          <div class="contacto-card">
+            <div class="contacto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <h3 class="contacto-heading">Nuestra Sala</h3>
+            <p class="contacto-desc">Av. Corrientes 1888, Sala B (Subsuelo Cineclásico)</p>
+            <p class="contacto-badge">Jueves a Domingos • 19:00 a 23:30 hs</p>
+          </div>
+
+          <!-- Tarjeta de Redes Sociales -->
+          <div class="contacto-card">
+            <div class="contacto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+              </svg>
+            </div>
+            <h3 class="contacto-heading">Comunidad &amp; Redes</h3>
+            <p class="contacto-desc">Participá de debates, sorteos y enterate de las funciones sorpresa:</p>
+            
+            <div class="social-links" aria-label="Redes sociales del club">
+              
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Visitar nuestro Instagram">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Visitar nuestro Facebook">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+
+              <!-- X / Twitter -->
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Visitar nuestro perfil en X (Twitter)">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span>X / Twitter</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- PIE DE PÁGINA                                             -->
+  <!-- ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="footer-title">CineClub Lumière</span>
+        <p class="footer-text">El refugio del cine independiente y los grandes clásicos que marcaron la historia.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 CineClub Lumière. Todos los derechos reservados.</p>
+        <p class="footer-subcopy">Proyecto desarrollado con HTML5, CSS3 y Vanilla JavaScript sin dependencias.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script de lógica de la aplicación -->
+  <script src="script.js"></script>
+</body>
+</html>

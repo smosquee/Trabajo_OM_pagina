@@ -1,0 +1,37 @@
+Quiero crear una página web para un club de cine, con el objetivo de dar a conocer el club, mostrar las películas que se van a proyectar y permitir que las personas puedan sacar entradas para las funciones disponibles.
+
+ESTRUCTURA DE LA PÁGINA
+
+1. Inicio: nombre del club, breve presentación y una imagen relacionada con el cine (hero a pantalla completa o similar).
+2. Funciones y películas: tarjetas con las películas disponibles. Cada una muestra póster, título, género, fecha, horario y una breve descripción, más un botón "Sacar entradas".
+3. Compra de entradas: formulario donde el usuario selecciona una función, indica la cantidad de entradas y completa sus datos (nombre, email y teléfono) para hacer la reserva. Al enviar, mostrar un mensaje de confirmación con el resumen de la reserva (función, fecha, horario, cantidad y datos).
+4. Contacto: correo electrónico y enlaces a las redes sociales del club (Instagram, Facebook, X/Twitter), con íconos.
+
+ESTILO Y DISEÑO
+
+- Moderno y amigable, relacionado con el mundo del cine.
+- Paleta oscura: negro como base, bordó como color principal y rosado como acento. Definí los colores como variables CSS en :root.
+- Usar imágenes de películas/cine. Como son pósters, usá placeholders o imágenes libres (Unsplash/Pexels) y dejá comentarios claros en el código indicando dónde reemplazarlas por las reales.
+- Tipografías de Google Fonts: una para títulos con aire cinematográfico y otra legible para el texto.
+- Atractiva, ordenada y fácil de navegar, con animaciones sutiles (hover en tarjetas y botones, transiciones suaves).
+- Responsive: debe verse bien en celular, tablet y escritorio.
+
+REQUISITOS TÉCNICOS
+
+- HTML, CSS y JavaScript puros, sin frameworks ni librerías de JS.
+- Archivos: index.html, styles.css y script.js. No uses otros nombres.
+- Menú de navegación fijo arriba con enlaces a cada sección y desplazamiento suave. En celular, menú hamburguesa.
+- Las funciones deben estar definidas en un array de objetos en script.js (id, título, género, fecha, horario, descripción, imagen, entradas disponibles) para poder agregar películas fácilmente. Las tarjetas y las opciones del formulario se generan a partir de ese array. Incluí 6 películas de ejemplo.
+- Al hacer clic en "Sacar entradas" en una función, se preselecciona esa función en el formulario y la página se desplaza a esa sección.
+- Validación del formulario: todos los campos obligatorios, email con formato válido, teléfono válido, cantidad mínima 1 y que no supere las entradas disponibles. Mostrar mensajes de error claros debajo de cada campo.
+- Al confirmar una reserva, descontar las entradas disponibles de esa función y actualizar la vista.
+- Accesibilidad básica: etiquetas <label>, atributos alt en imágenes, buen contraste y etiquetas semánticas (header, nav, main, section, footer).
+- Código comentado y ordenado, con nombres de variables claros.
+
+ARCHIVOS DE DOCUMENTACIÓN
+
+Además de la página, creá estos dos archivos en la raíz del proyecto:
+
+1. agente.md: describe el rol del agente, las reglas del proyecto, el stack usado, las convenciones de código y estilo, y una lista de qué debe y qué no debe hacer (por ejemplo: no agregar frameworks, no renombrar archivos, no borrar contenido sin avisar).
+
+2. memoria.md: registro vivo del proyecto con estas secciones: Decisiones tomadas, Tareas hechas, Tareas pendientes y Notas importantes. Completalo con lo que hagas en esta sesión y actualizalo al terminar cada cambio importante.
